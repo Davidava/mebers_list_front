@@ -47,7 +47,6 @@ router.beforeEach((to, from, next) => {
     }
     // Otherwise, log in
     authService.loginWithRedirect({ appState: { targetUrl: to.fullPath } });
-    return null;
   };
   // If loading has already finished, check our auth state using `fn()`
   if (!authService.loading) {
@@ -59,7 +58,6 @@ router.beforeEach((to, from, next) => {
       return auth();
     }
   });
-  return null;
 });
 
 export default router;

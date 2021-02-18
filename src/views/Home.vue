@@ -33,7 +33,9 @@ export default {
     },
   },
   mounted() {
-    this.fetchMembers(this.page);
+    if (!this.members.docs) {
+      this.fetchMembers(this.page);
+    }
   },
   computed: {
     ...mapGetters({
