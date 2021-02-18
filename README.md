@@ -5,7 +5,7 @@ Here are following functions organized in this app.
 
 #### Home page: 
 - Search for a member by name, surname, patronymic, date of birth, membership.
-- When you click on a member from the list, you will be taken to his page.
+- When you click on a member from the list, you will be route to his page.
 
 #### Import member page:
 - Adding a member to the list.
