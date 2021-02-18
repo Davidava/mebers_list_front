@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/list',
     name: 'List',
-    meta: { breadCrumb: 'Пошук', position: { x: 0, y: 0 } },
+    meta: { breadCrumb: 'Пошук' },
     props: (route) => ({ query: route.query.page }),
     component: () => import('@/views/Home.vue'),
   },

@@ -60,6 +60,7 @@ const actions = {
     commit('setloadingStatus', true);
     try {
       const members = await getMatchedMembers(text);
+      console.log(members);
       commit('findedMembers', members);
     } catch (err) {
       commit('setMemberError', err);

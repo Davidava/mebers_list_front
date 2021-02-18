@@ -7,9 +7,9 @@
     flat
     return-object
     clearable
-    hide-no-data
+    no-filter
     hide-details
-    hide-selected
+    hide-no-data
     item-text="name"
     label="Пошук в списку..."
     solo
